@@ -1,0 +1,9 @@
+body {
+  padding: 20px; }
+
+.item {
+  margin: 2px; }
+  .item.github {
+    background-color: #fdfbf2;
+    border: 1px solid #f1de98;
+    padding: 10px; }

@@ -1,0 +1,17 @@
+{% extends "aggregape/base.html" %}
+
+{% block content %}
+   
+    <div id="container">
+        {% for source, feeds in sources.items %}
+            {% for feed in feeds %}
+                {% for entry in feed %}
+                    <div class="item {{source}}">
+                        {{entry | safe}}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+
+{% endblock %}

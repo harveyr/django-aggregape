@@ -1,0 +1,13 @@
+body {
+    padding: 20px;
+}
+
+.item {
+    margin: 2px;
+    &.github {
+        $bg-color: lighten(#fcf8e9, 2%);
+        background-color: $bg-color;
+        border: 1px solid darken($bg-color, 20%);
+        padding: 10px;
+    }
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CraigsScraper</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static "aggregape/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "aggregape/css/main.css" %}">
+    {% block css %} {% endblock %}
+
+</head>
+<body>
+    {% block content %}{% endblock %}
+    <script src="{% static "aggregape/js/jquery.js" %}"></script>
+    <script src="{% static "aggregape/js/bootstrap.js" %}"></script>
+    <script src="{% static "aggregape/js/jquery.isotope.min.js" %}"></script>
+    <script src="{% static "aggregape/js/main.js" %}"></script>
+</body>
+</html>
